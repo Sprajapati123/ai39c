@@ -11,6 +11,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text("sandis2026"),
         leading: Icon(Icons.arrow_back_ios),
@@ -33,27 +34,45 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   fit: BoxFit.cover,
                 ),
               ),
-              Column(
-                children: [
-                  Text("174"),
-                  Text("Posts"),
-                ],
+              Column(children: [Text("174"), Text("Posts")]),
+              Column(children: [Text("1M"), Text("Following")]),
+              Column(children: [Text("500k"), Text("Followers")]),
+            ],
+          ),
+          Row(
+            children: [
+              Expanded(
+                flex: 2,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue,
+                    foregroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      side: BorderSide(color: Colors.black, width: 1),
+                    ),
+                  ),
+                  onPressed: () {},
+                  child: Text("Follow"),
+                ),
               ),
-              Column(
-                children: [
-                  Text("1M"),
-                  Text("Following"),
-                ],
+              Expanded(
+                flex: 2,
+                child: OutlinedButton(onPressed: () {}, child: Text("Message")),
               ),
-              Column(
-                children: [
-                  Text("500k"),
-                  Text("Followers"),
-                ],
+              Expanded(
+                flex: 2,
+                child: OutlinedButton(onPressed: () {}, child: Text("Message")),
+              ),
+              Expanded(
+                flex: 1,
+                child: OutlinedButton(
+                  onPressed: () {},
+                  child: Icon(Icons.keyboard_arrow_down_rounded),
+                ),
               ),
             ],
           ),
-
         ],
       ),
 

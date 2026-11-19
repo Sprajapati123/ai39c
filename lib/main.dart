@@ -1,6 +1,6 @@
-import 'package:ai39c/card_screen.dart';
-import 'package:ai39c/login_screen.dart';
-import 'package:ai39c/profile_screen.dart';
+import 'package:ai39c/view/profile/card_screen.dart';
+import 'package:ai39c/view/authentication/login_screen.dart';
+import 'package:ai39c/view/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

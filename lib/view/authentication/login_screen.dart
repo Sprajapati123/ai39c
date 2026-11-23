@@ -1,3 +1,5 @@
+import 'package:ai39c/constants/app_images.dart';
+import 'package:ai39c/constants/colors.dart';
 import 'package:ai39c/view/authentication/widgets/social_media_card.dart';
 import 'package:flutter/material.dart';
 
@@ -53,7 +55,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 Expanded(
                   child: SocialMediaCard(
                     label: "Facebook",
-                    imagePath: "assets/images/fb.png",
+                    imagePath: fbImage,
                   ),
                 ),
                 SizedBox(width: 10),
@@ -88,7 +90,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 hint: Text("abc@gmail.com"),
                 // prefixIcon: Icon(Icons.email),
                 filled: true,
-                fillColor: Colors.blue.shade50,
+                fillColor: pink,
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.transparent),
                 ),

@@ -1,3 +1,4 @@
+import 'package:ai39c/view/dashboard/dashboard_screen.dart';
 import 'package:ai39c/view/profile/card_screen.dart';
 import 'package:ai39c/view/authentication/login_screen.dart';
 import 'package:ai39c/view/profile/profile_screen.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.white
         )
       ),
-      home: LoginScreen(),
+      home: DashboardScreen(),
     );
   }
 }
